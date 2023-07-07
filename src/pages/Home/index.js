@@ -1,9 +1,26 @@
 import Banner from "@/components/Banner";
+import Events from "@/components/Events";
 import React from "react";
 import Image from "next/image";
 import img1 from "../../../public/images/yogaimg2.webp";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { GiLevelEndFlag } from "react-icons/gi";
+import f1 from "../../../public/images/feature7.png";
+import f2 from "../../../public/images/feature6.png";
+import g1 from "../../../public/images/banner1.avif";
+import g2 from "../../../public/images/banner2.avif";
+import g3 from "../../../public/images/banner3.avif";
+import g4 from "../../../public/images/banner4.avif";
+import g5 from "../../../public/images/1.webp";
+import g6 from "../../../public/images/2.webp";
+import g7 from "../../../public/images/3.webp";
+import g8 from "../../../public/images/8.webp";
+import g9 from "../../../public/images/7.webp";
+import g10 from "../../../public/images/9.jpeg";
+import g11 from "../../../public/images/4.jpeg";
+import g12 from "../../../public/images/img_2.webp";
+import Footer from "@/components/Footer";
+
 const Homepage = () => {
   return (
     <>
@@ -228,6 +245,124 @@ const Homepage = () => {
             </div>
           </div>
         </div>
+
+        {/* -----Yoga features */}
+
+        <div className="mx-20">
+          <div className="my-20">
+            <h2 className="text-3xl text-center ">Yoga Features</h2>
+          </div>
+          <div className="cardCont grid grid-cols-4 justify-center ">
+            <div className="card1 p-10">
+              <div className="text-center">
+                <div className="flex justify-center items-center mb-5">
+                  <Image src={f1} className=" bg-pink-400" alt="" />
+                </div>{" "}
+                <div>
+                  <h2 className="text-xl mb-5">Peace of Mind</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde temporibus
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="card1 p-10">
+              <div>
+                <div className="flex justify-center items-center mb-5">
+                  <Image src={f1} className=" bg-blue-400" alt="" />
+                </div>{" "}
+                <div className="text-center">
+                  <h2 className="text-xl mb-5">Peace of Mind</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde temporibus
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="card1 p-10">
+              <div>
+                <div className="flex justify-center items-center mb-5">
+                  <Image src={f1} className=" bg-red-400" alt="" />
+                </div>{" "}
+                <div className="text-center">
+                  <h2 className="text-xl mb-5">Peace of Mind</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde temporibus
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="card1 p-10">
+              <div>
+                <div className="flex justify-center items-center mb-5">
+                  <Image src={f1} className=" bg-green-400" alt="" />
+                </div>
+                <div className="text-center">
+                  <h2 className="text-xl mb-5">Peace of Mind</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde temporibus
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* --------gallery */}
+
+        <div className="mt-10">
+          <div className="my-10">
+            <h1 className="text-center text-3xl mt-10 mb-10">Our Gallery</h1>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Image
+                src={g9}
+                className="w-full sm:w-1/2 lg:w-1/4 xl:w-1/4 h-auto"
+              />
+              <Image
+                src={g1}
+                className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 h-auto"
+              />
+              <Image
+                src={g2}
+                className="w-full sm:w-1/2 lg:w-1/2 xl:w-1/4 h-auto"
+              />
+              <Image
+                src={g3}
+                className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 h-auto"
+              />
+              <Image
+                src={g4}
+                className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 h-auto"
+              />
+              <Image
+                src={g5}
+                className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 h-auto"
+              />
+              <Image
+                src={g6}
+                className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 h-auto"
+              />
+              <Image
+                src={g10}
+                className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 h-auto"
+              />
+              <Image
+                src={g11}
+                className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 h-auto"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* --------upcoming events */}
+        <Events />
+
+        {/* -----------Footer */}
+      <Footer/>
       </div>
     </>
   );
