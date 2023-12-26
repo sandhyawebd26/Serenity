@@ -6,15 +6,14 @@ import twt from "../../public/images/twitter-icon.png";
 import wp from "../../public/images/wp-icon.png";
 import insta from "../../public/images/insta-icon.png";
 import Head from "next/head";
-import Script from "next/script";
 
 function Footer() {
 
   return (
     <>
       <Head>
-        <Script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></Script>
-        <Script src="https://mediafiles.botpress.cloud/d5567d48-f284-43d3-a9f7-a185e5225ccd/webchat/config.js" defer></Script>
+        <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+        <script src="https://mediafiles.botpress.cloud/d5567d48-f284-43d3-a9f7-a185e5225ccd/webchat/config.js" defer></script>
       </Head>
       <footer className="bg-gray-900">
         <div className="container mx-auto py-12">
